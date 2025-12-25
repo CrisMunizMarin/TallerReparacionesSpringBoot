@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 public class Vehiculo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_vehiculo;
+    private Long id_vehiculo;
     
     private String matricula;
     private String marca;
@@ -29,11 +29,11 @@ public class Vehiculo {
     }
     
     // Getters y Setters
-    public int getId_vehiculo() {
+    public Long getId_vehiculo() {
         return id_vehiculo;
     }
     
-    public void setId_vehiculo(int id_vehiculo) {
+    public void setId_vehiculo(Long id_vehiculo) {
         this.id_vehiculo = id_vehiculo;
     }
     

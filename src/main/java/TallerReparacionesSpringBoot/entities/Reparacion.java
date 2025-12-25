@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public class Reparacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_reparacion;
+    private Long id_reparacion;
     
     private String descripcion;
     private LocalDate fecha_entrada;  // Usa LocalDate en vez de java.sql.Date
@@ -41,11 +41,11 @@ public class Reparacion {
     }
     
     // Getters y Setters
-    public int getId_reparacion() {
+    public Long getId_reparacion() {
         return id_reparacion;
     }
     
-    public void setId_reparacion(int id_reparacion) {
+    public void setId_reparacion(Long id_reparacion) {
         this.id_reparacion = id_reparacion;
     }
     

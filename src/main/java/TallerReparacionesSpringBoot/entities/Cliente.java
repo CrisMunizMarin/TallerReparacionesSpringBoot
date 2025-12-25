@@ -9,7 +9,7 @@ import jakarta.persistence.Id;
 public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id_cliente;
+	private Long id_cliente;
 	private String nombre;
 	private String dni_cliente;
 	private String telefono;
@@ -38,12 +38,15 @@ public class Cliente {
 	public String getDni_cliente() {
 		return dni_cliente;
 	}
-	public int getId_cliente() {
+	
+	public Long getId_cliente() {
 		return id_cliente;
 	}
-	public void setId_cliente(int id_cliente) {
+
+	public void setId_cliente(Long id_cliente) {
 		this.id_cliente = id_cliente;
 	}
+
 	public void setDni_cliente(String dni_cliente) {
 		this.dni_cliente = dni_cliente;
 	}
